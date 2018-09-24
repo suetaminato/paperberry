@@ -6,10 +6,14 @@
         &#8220;First, solve the problem. Then, write the code.&#8221;
         <footer>
           <small>
-            <em>&mdash;John Johnson</em>
+            <em class="boom">&mdash;John Johnson</em>
           </small>
         </footer>
       </blockquote>
     </v-flex>
   </v-layout>
 </template>
+
+<style lang="scss">
+  @import '~/assets/scss/mycss_lib.scss';
+</style>
