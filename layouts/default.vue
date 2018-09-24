@@ -100,6 +100,6 @@
 </script>
 
 <style lang="scss">
-  @import '~/assets/scss/main.scss';
+  @import '~/assets/stylus/main.styl';
 
 </style>
