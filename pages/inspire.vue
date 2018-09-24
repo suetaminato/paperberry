@@ -7,6 +7,7 @@
         <footer>
           <small>
             <em class="boom">&mdash;John Johnson</em>
+            <ico-heart />
           </small>
         </footer>
       </blockquote>
@@ -14,6 +15,15 @@
   </v-layout>
 </template>
 
-<style lang="scss">
-  @import '~/assets/scss/mycss_lib.scss';
+<script>
+import IcoHeart from '~/components/Shared/IcoHeart.vue'
+export default {
+  components: {
+    IcoHeart
+  }
+}
+</script>
+
+
+<style>
 </style>
