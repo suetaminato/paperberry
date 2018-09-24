@@ -1,0 +1,14 @@
+$font-stack:    'Montserrat', sans-serif;
+$primary-color: #0f0;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: yellow;
+}
+
+.boom {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: red;
+}
