@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -98,3 +98,8 @@
     }
   }
 </script>
+
+<style lang="scss">
+  @import '~/assets/scss/main.scss';
+
+</style>
