@@ -4,6 +4,6 @@
 
 <style lang="stylus" scoped>
   img{
-    margin: 0 15px;
+    margin: 0 5pt;
   }
 </style>
