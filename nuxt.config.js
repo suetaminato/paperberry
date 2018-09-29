@@ -1,7 +1,5 @@
 const pkg = require('./package')
 
-const nodeExternals = require('webpack-node-externals')
-
 module.exports = {
   mode: 'universal',
 
@@ -17,7 +15,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
@@ -25,13 +22,13 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: { color: '#fff' },
 
   /*
   ** Global CSS
   */
   css: [
-    '@/assets/stylus/main.styl'
+    '~/assets/style/app.styl'
   ],
 
   /*
@@ -69,15 +66,11 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options : {
+            fix : true
+          }
         })
-      }
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
       }
     }
   }

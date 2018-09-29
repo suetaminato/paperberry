@@ -1,22 +1,22 @@
-# paper_berry
+# paperberry
 
-> My wondrous Nuxt.js project
+> My breathtaking Nuxt.js project
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn run dev
 
 # build for production and launch server
-$ npm run build
-$ npm start
+$ yarn run build
+$ yarn start
 
 # generate static project
-$ npm run generate
+$ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
