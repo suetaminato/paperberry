@@ -1,6 +1,6 @@
 # paperberry
 
-> My breathtaking Nuxt.js project
+> My glorious Nuxt.js project
 
 ## Build Setup
 
