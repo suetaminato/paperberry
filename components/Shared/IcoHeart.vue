@@ -1,5 +1,8 @@
 <template>
-  <img src="/ICO_coracao.png" alt="">
+  <img
+    src="/ICO_coracao.png"
+    alt="">
+
 </template>
 
 <style lang="stylus" scoped>
