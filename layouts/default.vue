@@ -25,7 +25,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
-      :clipped-left="clipped"
+      class="backprimary"
       fixed
       app
     >
