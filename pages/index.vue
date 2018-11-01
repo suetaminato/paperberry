@@ -67,3 +67,10 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  // p{
+  //   font-family: 'Montserrat', sans-serif;
+  // }
+</style>
+
