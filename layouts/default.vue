@@ -46,7 +46,7 @@
       </v-btn>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
-      <header-pages />
+      <menu-header-pages />
       <!-- <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -82,11 +82,11 @@
 </template>
 
 <script>
-  import HeaderPages from '~/components/Menu/HeaderPages.vue'
+  import MenuHeaderPages from '~/components/Menu/MenuHeaderPages.vue'
   export default {
 
   components: {
-    HeaderPages
+    MenuHeaderPages
   },
   data() {
     return {
