@@ -1,7 +1,5 @@
 const pkg = require('./package')
 
-const nodeExternals = require('webpack-node-externals')
-
 module.exports = {
   mode: 'universal',
 
@@ -17,20 +15,21 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
-    ]
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' }    
+      ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: { color: '#fff' },
 
   /*
   ** Global CSS
   */
   css: [
-    'vuetify/src/stylus/main.styl'
+    '~/assets/style/app.styl'
   ],
 
   /*
@@ -70,13 +69,6 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-      }
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
       }
     }
   }

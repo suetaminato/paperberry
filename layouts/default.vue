@@ -9,17 +9,17 @@
     >
       <v-list>
         <v-list-tile
-          router
+          v-for="(item, i) in items"
           :to="item.to"
           :key="i"
-          v-for="(item, i) in items"
+          router
           exact
         >
           <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
+            <v-icon v-html="item.icon" />
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -30,7 +30,7 @@
         icon
         @click.stop="miniVariant = !miniVariant"
       >
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
+        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
       <v-btn
         icon
@@ -63,6 +63,7 @@
       temporary
       :right="right"
       v-model="rightDrawer"
+      temporary
       fixed
     >
       <v-list>
@@ -104,3 +105,7 @@
   }
   }
 </script>
+
+<style lang="stylus">
+  @import '../assets/stylus/main.styl'
+</style>
